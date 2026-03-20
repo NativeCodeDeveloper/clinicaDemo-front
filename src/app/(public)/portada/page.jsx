@@ -157,16 +157,18 @@ export default function Portada() {
                       />
 
                       <h1 className="mt-5 max-w-2xl text-balance text-4xl font-light leading-[0.98] tracking-[0.02em] text-[color:var(--ink-900)] sm:text-5xl lg:text-6xl">
-                        Estetica avanzada con sello profesional 
+                        
                       </h1>
+                      {/*
                       <h2 className="mt-5 max-w-2xl text-balance text-2xl font-light leading-tight tracking-[0.02em] text-[color:var(--ink-700)] sm:text-3xl lg:text-4xl">
                         {slide.title}
                       </h2>
                       <p className="mt-6 max-w-2xl text-pretty text-sm leading-8 tracking-[0.02em] text-[color:var(--ink-700)]/80 sm:text-base">
                         {slide.text}
                       </p>
+                      */}
 
-                      <div className="mt-0 flex w-full max-w-xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
+                      <div className="mt-24 flex w-full max-w-xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
                         <Link
                           href="/agendaProfesionales"
                           aria-label="Agendar hora"
