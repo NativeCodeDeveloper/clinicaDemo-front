@@ -4,7 +4,6 @@
 
 
 
-/*
 
 // frontend/src/middleware.ts
 import { NextResponse, type NextRequest } from 'next/server'
@@ -21,12 +20,12 @@ matcher: ['/dashboard/:path*'], // o simplemente [] si quieres que no aplique a 
 
 
 
-*/
 
 
 
 
 
+/*
 
 
 import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
@@ -73,4 +72,5 @@ export const config = {
 }
 
 
+*/
 
