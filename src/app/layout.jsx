@@ -59,6 +59,11 @@ export const metadata = {
   alternates: {
     canonical: metadataBase.href,
   },
+  icons: {
+    icon: "/logopng.png",
+    shortcut: "/logopng.png",
+    apple: "/logopng.png",
+  },
   openGraph: {
     title: "Clinica Alto Costanera | Clinica Estetica Premium",
     description:
