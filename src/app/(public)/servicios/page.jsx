@@ -19,16 +19,16 @@ const servicios = [
 
 export default function ServicioPage() {
   return (
-    <main className="bg-[#f6f7fb] text-slate-900">
+    <main className="bg-[color:var(--background)] text-[color:var(--ink-900)]">
       <section className="mx-auto w-full max-w-7xl px-6 pb-20 pt-24 md:px-10 md:pb-24 md:pt-28 xl:px-12">
-        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--gold-700)]/80">
           Servicios
         </p>
         <h1 className="mt-5 max-w-4xl text-4xl leading-tight sm:text-5xl">
           Odontología clínica premium con evaluación personalizada.
         </h1>
-        <p className="mt-7 max-w-3xl text-base leading-relaxed text-slate-600">
-          En Ortega & Schmuck diseñamos planes de tratamiento odontológico según el
+        <p className="mt-7 max-w-3xl text-base leading-relaxed text-[color:var(--ink-700)]/80">
+          En Clinica Alto Costanera diseñamos planes de tratamiento odontológico según el
           diagnóstico clínico de cada paciente, priorizando salud oral, función y estética.
         </p>
       </section>
@@ -37,13 +37,13 @@ export default function ServicioPage() {
         {servicios.map((servicio, index) => (
           <article
             key={servicio}
-            className="group rounded-3xl border border-white/80 bg-white/90 p-7 shadow-[0_18px_50px_-34px_rgba(15,23,42,0.45)] transition hover:-translate-y-0.5 hover:shadow-[0_26px_60px_-32px_rgba(15,23,42,0.52)]"
+            className="group rounded-3xl border border-[color:var(--gold-100)] bg-white p-7 shadow-[0_18px_50px_-34px_rgba(63,48,24,0.3)] transition hover:-translate-y-0.5 hover:shadow-[0_26px_60px_-32px_rgba(63,48,24,0.36)]"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--gold-700)]/70">
               Servicio {String(index + 1).padStart(2, "0")}
             </p>
-            <h2 className="mt-4 text-xl leading-snug text-slate-900">{servicio}</h2>
-            <p className="mt-5 text-sm leading-relaxed text-slate-600">
+            <h2 className="mt-4 text-xl leading-snug text-[color:var(--ink-900)]">{servicio}</h2>
+            <p className="mt-5 text-sm leading-relaxed text-[color:var(--ink-700)]/80">
               Planificación individual y seguimiento clínico para resultados seguros,
               funcionales y estables en el tiempo.
             </p>
@@ -51,28 +51,28 @@ export default function ServicioPage() {
         ))}
       </section>
 
-      <section className="border-t border-slate-200 bg-white">
+      <section className="border-t border-[color:var(--gold-100)] bg-white">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-8 px-6 py-16 md:flex-row md:items-center md:px-10 md:py-20 xl:px-12">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[color:var(--gold-700)]/80">
               Siguiente paso
             </p>
-            <h3 className="mt-4 text-3xl leading-tight text-slate-900">
+            <h3 className="mt-4 text-3xl leading-tight text-[color:var(--ink-900)]">
               Agenda una evaluación odontológica personalizada.
             </h3>
           </div>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/contacto"
-              className="rounded-full bg-slate-900 px-7 py-3 text-sm font-medium text-white transition hover:bg-slate-700"
+              className="rounded-full bg-[color:var(--gold-500)] px-7 py-3 text-sm font-medium text-[color:var(--ink-900)] transition hover:bg-[color:var(--gold-300)]"
             >
               Solicitar cita
             </Link>
             <a
-              href="https://wa.me/56994836980"
+              href="https://wa.me/56956066620"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-slate-300 bg-white px-7 py-3 text-sm font-medium text-slate-800 transition hover:border-slate-400"
+              className="rounded-full border border-[color:var(--gold-300)] bg-white px-7 py-3 text-sm font-medium text-[color:var(--ink-900)] transition hover:bg-[color:var(--gold-50)]"
             >
               WhatsApp
             </a>

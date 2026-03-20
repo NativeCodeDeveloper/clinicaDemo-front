@@ -28,27 +28,27 @@ const michroma = Michroma({
 });
 
 export const metadataBase = new URL(
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.ortegaschmuck.cl"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.clinicaaltocostanera.cl"
 );
 
 export const metadata = {
   title: {
-    default: "Ortega & Schmuck | Clínica Dental Premium",
-    template: "%s | Ortega & Schmuck",
+    default: "Clinica Alto Costanera | Clinica Estetica Premium",
+    template: "%s | Clinica Alto Costanera",
   },
   description:
-    "Sitio oficial de Ortega & Schmuck. Odontología clínica integral con tecnología avanzada y planes personalizados.",
+    "Clinica Alto Costanera. Medicina estetica y odontologia integral con tecnologia avanzada y protocolos personalizados.",
   keywords: [
-    "Ortega & Schmuck",
-    "clinica dental",
+    "Clinica Alto Costanera",
+    "clinica estetica",
     "odontologia integral",
-    "rehabilitacion oral",
+    "medicina estetica",
     "diseno de sonrisa",
-    "implantes dentales",
+    "armonizacion facial",
     "clinica premium",
   ],
-  authors: [{ name: "Ortega & Schmuck", url: metadataBase.href }],
-  publisher: "Ortega & Schmuck",
+  authors: [{ name: "Clinica Alto Costanera", url: metadataBase.href }],
+  publisher: "Clinica Alto Costanera",
   robots: {
     index: true,
     follow: true,
@@ -60,19 +60,19 @@ export const metadata = {
     canonical: metadataBase.href,
   },
   openGraph: {
-    title: "Ortega & Schmuck | Clínica Dental Premium",
+    title: "Clinica Alto Costanera | Clinica Estetica Premium",
     description:
-      "Experiencia clínica premium con enfoque integral en odontología y rehabilitación oral.",
+      "Experiencia premium en medicina estetica y odontologia integral.",
     url: metadataBase.href,
-    siteName: "Ortega & Schmuck",
+    siteName: "Clinica Alto Costanera",
     locale: "es_CL",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ortega & Schmuck",
+    title: "Clinica Alto Costanera",
     description:
-      "Odontología clínica premium con protocolos personalizados.",
+      "Medicina estetica y odontologia premium con protocolos personalizados.",
   },
 };
 

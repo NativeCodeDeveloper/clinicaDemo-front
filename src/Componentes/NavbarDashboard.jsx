@@ -44,8 +44,8 @@ export default function NavbarDashboard() {
               width: 8,
               height: 8,
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
-              boxShadow: '0 0 12px rgba(59, 130, 246, 0.4)'
+              background: 'linear-gradient(135deg, #c9a66b 0%, #9a7a45 100%)',
+              boxShadow: '0 0 12px rgba(201, 166, 107, 0.35)'
             }} />
             <Typography
               variant="h6"
@@ -63,13 +63,13 @@ export default function NavbarDashboard() {
                 WebkitTextFillColor: 'transparent',
                 transition: 'all 0.3s ease',
                 '&:hover': {
-                  background: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+                  background: 'linear-gradient(135deg, #c9a66b 0%, #9a7a45 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent'
                 }
               }}
             >
-                Ortega & Schmuck
+                Clinica Alto Costanera
             </Typography>
           </Box>
 
@@ -104,12 +104,12 @@ export default function NavbarDashboard() {
                       transform: 'translateX(-50%)',
                       width: 0,
                       height: '2px',
-                      background: 'linear-gradient(90deg, #3B82F6, #2563EB)',
+                      background: 'linear-gradient(90deg, #c9a66b, #9a7a45)',
                       transition: 'width 0.3s ease'
                     },
                     '&:hover': {
-                      bgcolor: 'rgba(59, 130, 246, 0.08)',
-                      color: '#3B82F6',
+                      bgcolor: 'rgba(201, 166, 107, 0.12)',
+                      color: '#9a7a45',
                       '&::before': {
                         width: '80%'
                       }
@@ -144,12 +144,12 @@ export default function NavbarDashboard() {
                   transform: 'translateX(-50%)',
                   width: 0,
                   height: '2px',
-                  background: 'linear-gradient(90deg, #3B82F6, #2563EB)',
+                  background: 'linear-gradient(90deg, #c9a66b, #9a7a45)',
                   transition: 'width 0.3s ease'
                 },
                 '&:hover': {
-                  bgcolor: 'rgba(59, 130, 246, 0.08)',
-                  color: '#3B82F6',
+                  bgcolor: 'rgba(201, 166, 107, 0.12)',
+                  color: '#9a7a45',
                   '&::before': {
                     width: '80%'
                   }
@@ -185,12 +185,12 @@ export default function NavbarDashboard() {
                           transform: 'translateX(-50%)',
                           width: 0,
                           height: '2px',
-                          background: 'linear-gradient(90deg, #3B82F6, #2563EB)',
+                          background: 'linear-gradient(90deg, #c9a66b, #9a7a45)',
                           transition: 'width 0.3s ease'
                       },
                       '&:hover': {
-                          bgcolor: 'rgba(59, 130, 246, 0.08)',
-                          color: '#3B82F6',
+                          bgcolor: 'rgba(201, 166, 107, 0.12)',
+                          color: '#9a7a45',
                           '&::before': {
                               width: '80%'
                           }

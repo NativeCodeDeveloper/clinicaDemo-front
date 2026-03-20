@@ -47,12 +47,12 @@ useEffect(() => {
 
 
     return (
-    <section id="servicios" className="scroll-mt-24 bg-[#080808] py-20 text-white sm:py-24">
+    <section id="servicios" className="scroll-mt-24 bg-[color:var(--background)] py-20 text-[color:var(--ink-900)] sm:py-24">
       <div className="mx-auto w-full max-w-7xl px-5 md:px-8 lg:px-10">
         <RevealOnScroll>
-          <p className="text-xs uppercase tracking-[0.24em] text-white/65">Servicios</p>
+          <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--gold-700)]/80">Servicios</p>
           <h2 className="mt-4 max-w-3xl text-balance text-3xl font-light leading-tight tracking-[0.02em] sm:text-4xl lg:text-5xl">
-            Tratamientos diseñados para mejorar tu salud oral con precisión clínica.
+            Tratamientos creados para realzar tu bienestar con precision clinica.
           </h2>
         </RevealOnScroll>
 
@@ -66,21 +66,21 @@ useEffect(() => {
               <Link
                 href="/reserva-hora"
                 aria-label={`Agendar para ${service.name}`}
-                className="group block h-full overflow-hidden rounded-3xl border border-white/10 bg-[#121212] transition duration-300 ease-out hover:-translate-y-1 hover:border-white/25"
+                className="group block h-full overflow-hidden rounded-3xl border border-[color:var(--gold-100)] bg-white transition duration-300 ease-out hover:-translate-y-1 hover:border-[color:var(--gold-300)]"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
 
                       src={service.image}
                       alt={service.name}
-                      className="w-full h-full object-cover transition duration-500 ease-out group-hover:scale-105"
+                      className="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.1)_0%,rgba(0,0,0,0.65)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.05)_0%,rgba(19,15,12,0.55)_100%)]" />
                 </div>
                 <div className="p-5">
-                  <h3 className="text-lg font-light tracking-[0.02em] text-white">{service.name}</h3>
-                  <p className="mt-2 text-sm leading-7 tracking-[0.02em] text-white/70">
-                    Evaluación personalizada y plan clínico premium para resultados funcionales y naturales.
+                  <h3 className="text-lg font-light tracking-[0.02em] text-[color:var(--ink-900)]">{service.name}</h3>
+                  <p className="mt-2 text-sm leading-7 tracking-[0.02em] text-[color:var(--ink-700)]/80">
+                    Evaluacion personalizada y plan clinico premium para resultados funcionales y naturales.
                   </p>
                 </div>
               </Link>

@@ -5,7 +5,7 @@ import Seccion3 from "@/app/(public)/seccion3/page";
 
 export default function Home() {
   return (
-    <main className="overflow-x-clip">
+    <main className="-mt-24 overflow-x-clip md:-mt-28">
       <Portada />
       <Seccion1 />
       <Seccion2 />

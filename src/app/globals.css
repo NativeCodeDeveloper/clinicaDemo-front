@@ -50,38 +50,45 @@ html {
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 0.65rem;
+  --background: #fcfaf6;
+  --foreground: #1f1b17;
+  --card: #ffffff;
+  --card-foreground: #1f1b17;
+  --popover: #ffffff;
+  --popover-foreground: #1f1b17;
+  --primary: #c9a66b;
+  --primary-foreground: #1f1b17;
+  --secondary: #f4eee3;
+  --secondary-foreground: #2f2a25;
+  --muted: #f2ede3;
+  --muted-foreground: #6b6258;
+  --accent: #f7f1e6;
+  --accent-foreground: #2f2a25;
+  --destructive: #b42318;
+  --border: #e7ded0;
+  --input: #e7ded0;
+  --ring: #d7c29b;
+  --chart-1: #c9a66b;
+  --chart-2: #8d7860;
+  --chart-3: #4b4a47;
+  --chart-4: #e0c59b;
+  --chart-5: #a18659;
+  --sidebar: #fbf9f4;
+  --sidebar-foreground: #1f1b17;
+  --sidebar-primary: #c9a66b;
+  --sidebar-primary-foreground: #1f1b17;
+  --sidebar-accent: #f4eee3;
+  --sidebar-accent-foreground: #2f2a25;
+  --sidebar-border: #e7ded0;
+  --sidebar-ring: #d7c29b;
+  --gold-50: #fffaf2;
+  --gold-100: #f6efe3;
+  --gold-300: #e0c89f;
+  --gold-500: #c9a66b;
+  --gold-700: #9a7a45;
+  --ink-900: #1a1714;
+  --ink-700: #2d2824;
 }
 
 .dark {

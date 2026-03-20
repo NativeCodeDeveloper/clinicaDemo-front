@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
   {
     id: "hero-1",
     image: "/fondo2.png",
-    alt: "Clinica premium Ortega & Schmuck",
+    alt: "Clinica premium Clinica Alto Costanera",
     badge: "Experiencia premium",
     title: "Diseño clínico de alta precisión.",
     text: "Protocolos personalizados para resultados naturales en odontología integral.",
@@ -55,7 +55,7 @@ export default function Portada() {
             id: portada.tituloPortadaCarrusel,
             image: `https://imagedelivery.net/aCBUhLfqUcxA2yhIBn1fNQ/${portada.imagenPortada}/portada`,
             alt: portada.tituloPortadaCarrusel,
-            badge: "Clinica Ortega & Schmuck",
+            badge: "Clinica Alto Costanera",
             title: portada.tituloPortadaCarrusel,
             text: portada.descripcionPublicacionesPortada,
         }
@@ -113,14 +113,14 @@ export default function Portada() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen scroll-mt-24 overflow-hidden bg-black text-white"
+      className="relative min-h-screen scroll-mt-24 overflow-hidden bg-[color:var(--background)] text-[color:var(--ink-900)]"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_10%_12%,rgba(133,139,149,0.2),transparent_40%),radial-gradient(circle_at_90%_0%,rgba(255,255,255,0.08),transparent_35%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_10%_12%,rgba(201,166,107,0.16),transparent_40%),radial-gradient(circle_at_90%_0%,rgba(231,222,208,0.45),transparent_38%)]"/>
 
-      <div className="mx-auto flex min-h-[calc(100vh-5rem)] w-full max-w-none items-start px-2 pt-3 pb-4 sm:pt-5 sm:pb-8 md:min-h-[calc(100vh-6rem)] md:px-8 md:pt-7 lg:px-10">
-        <div className="relative w-full overflow-hidden rounded-[2rem] border border-white/15 bg-zinc-900/40 shadow-[0_34px_90px_-56px_rgba(0,0,0,0.95)]">
+      <div className="mx-auto flex min-h-screen w-full max-w-none items-start px-2 pt-0 pb-4 sm:px-4 sm:pb-8 md:px-8 lg:px-10">
+        <div className="relative w-full overflow-hidden rounded-b-[2rem] border border-t-0 border-[color:var(--gold-100)] bg-white shadow-[0_34px_90px_-56px_rgba(63,48,24,0.35)]">
           <div
-            className="relative min-h-[76vh] sm:min-h-[82vh]"
+            className="relative min-h-[78svh] sm:min-h-[84svh] lg:min-h-[88svh]"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
           >
@@ -142,20 +142,20 @@ export default function Portada() {
                     />
 
 
-                  <div className="absolute inset-0 bg-[linear-gradient(110deg,rgba(5,5,6,0.92)_0%,rgba(8,8,8,0.55)_45%,rgba(12,12,12,0.42)_100%)]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(110deg,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.08)_45%,rgba(255,255,255,0.02)_100%)]" />
 
-                  <div className="absolute inset-x-0 bottom-0 top-0 flex items-end px-6 pb-10 pt-20 sm:px-10 sm:pb-12 md:px-14">
+                  <div className="absolute inset-x-0 bottom-0 top-0 flex items-end px-6 pb-10 pt-28 sm:px-10 sm:pb-12 md:px-14 md:pt-32">
                     <div className="max-w-2xl">
-                      <p className="text-[11px] uppercase tracking-[0.28em] text-white/70">
+                      <p className="text-[11px] uppercase tracking-[0.28em] text-[color:var(--gold-700)]/80">
                         {slide.badge}
                       </p>
-                      <h1 className="mt-4 text-balance text-4xl font-light leading-tight tracking-[0.02em] text-white sm:text-5xl lg:text-6xl">
-                        Odontología clínica integral
+                      <h1 className="mt-4 text-balance text-4xl font-light leading-tight tracking-[0.02em] text-[color:var(--ink-900)] sm:text-5xl lg:text-6xl">
+                        Estetica avanzada con sello premium
                       </h1>
-                      <h2 className="mt-4 text-balance text-2xl font-light leading-tight tracking-[0.02em] text-white/95 sm:text-3xl lg:text-4xl">
+                      <h2 className="mt-4 text-balance text-2xl font-light leading-tight tracking-[0.02em] text-[color:var(--ink-700)] sm:text-3xl lg:text-4xl">
                         {slide.title}
                       </h2>
-                      <p className="mt-5 max-w-xl text-sm leading-8 tracking-[0.02em] text-white/80 sm:text-base">
+                      <p className="mt-5 max-w-xl text-sm leading-8 tracking-[0.02em] text-[color:var(--ink-700)]/80 sm:text-base">
                         {slide.text}
                       </p>
 
@@ -163,14 +163,14 @@ export default function Portada() {
                         <Link
                           href="/agendaProfesionales"
                           aria-label="Agendar hora"
-                          className="inline-flex w-full justify-center rounded-full border border-white/20 bg-white px-7 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-black transition duration-300 ease-out hover:bg-white/90 sm:w-auto"
+                          className="inline-flex w-full justify-center rounded-full border border-[color:var(--gold-300)] bg-[color:var(--gold-500)] px-7 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--ink-900)] transition duration-300 ease-out hover:bg-[color:var(--gold-300)] sm:w-auto"
                         >
                           Agendar hora
                         </Link>
                         <Link
                           href="/agendaProfesionales"
                           aria-label="Ir a servicios"
-                          className="inline-flex w-full justify-center rounded-full border border-white/35 bg-white/10 px-7 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-white transition duration-300 ease-out hover:bg-white/20 sm:w-auto"
+                          className="inline-flex w-full justify-center rounded-full border border-[color:var(--gold-300)] bg-white px-7 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--ink-900)] transition duration-300 ease-out hover:bg-[color:var(--gold-50)] sm:w-auto"
                         >
                           Conoce nuestros servicios
                         </Link>
@@ -192,8 +192,8 @@ export default function Portada() {
                     className={[
                       "h-2.5 rounded-full transition-all duration-300",
                       activeIndex === index
-                        ? "w-8 bg-white"
-                        : "w-2.5 bg-white/45 hover:bg-white/70",
+                        ? "w-8 bg-[color:var(--gold-500)]"
+                        : "w-2.5 bg-[color:var(--gold-300)]/60 hover:bg-[color:var(--gold-500)]",
                     ].join(" ")}
                   />
                 ))}
@@ -204,7 +204,7 @@ export default function Portada() {
                   type="button"
                   aria-label="Slide anterior"
                   onClick={goPrev}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-black/35 text-white transition duration-300 hover:bg-black/55"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[color:var(--gold-300)] bg-white text-[color:var(--ink-900)] transition duration-300 hover:bg-[color:var(--gold-50)]"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </button>
@@ -212,7 +212,7 @@ export default function Portada() {
                   type="button"
                   aria-label="Siguiente slide"
                   onClick={goNext}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-black/35 text-white transition duration-300 hover:bg-black/55"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[color:var(--gold-300)] bg-white text-[color:var(--ink-900)] transition duration-300 hover:bg-[color:var(--gold-50)]"
                 >
                   <ChevronRight className="h-4 w-4" />
                 </button>
