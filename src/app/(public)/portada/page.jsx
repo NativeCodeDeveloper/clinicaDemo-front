@@ -144,33 +144,40 @@ export default function Portada() {
 
                     <div className="absolute inset-0 bg-[linear-gradient(110deg,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.08)_45%,rgba(255,255,255,0.02)_100%)]" />
 
-                  <div className="absolute inset-x-0 bottom-0 top-0 flex items-end px-6 pb-10 pt-28 sm:px-10 sm:pb-12 md:px-14 md:pt-32">
-                    <div className="max-w-2xl">
-                      <p className="text-[11px] uppercase tracking-[0.28em] text-[color:var(--gold-700)]/80">
-                        {slide.badge}
-                      </p>
-                      <h1 className="mt-4 text-balance text-4xl font-light leading-tight tracking-[0.02em] text-[color:var(--ink-900)] sm:text-5xl lg:text-6xl">
-                        Estetica avanzada con sello premium
+                  <div className="absolute inset-0 flex items-center justify-center px-6 py-20 sm:px-10 md:px-14">
+                    <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+                      
+
+                      <img
+                        src="/logopng.png"
+                        alt="logo clinica"
+                        height={300}
+                        width={300}
+                        className="mt-12 block h-auto w-24 object-contain sm:w-28 md:w-32 lg:w-[300px]"
+                      />
+
+                      <h1 className="mt-5 max-w-2xl text-balance text-4xl font-light leading-[0.98] tracking-[0.02em] text-[color:var(--ink-900)] sm:text-5xl lg:text-6xl">
+                        Estetica avanzada con sello profesional 
                       </h1>
-                      <h2 className="mt-4 text-balance text-2xl font-light leading-tight tracking-[0.02em] text-[color:var(--ink-700)] sm:text-3xl lg:text-4xl">
+                      <h2 className="mt-5 max-w-2xl text-balance text-2xl font-light leading-tight tracking-[0.02em] text-[color:var(--ink-700)] sm:text-3xl lg:text-4xl">
                         {slide.title}
                       </h2>
-                      <p className="mt-5 max-w-xl text-sm leading-8 tracking-[0.02em] text-[color:var(--ink-700)]/80 sm:text-base">
+                      <p className="mt-6 max-w-2xl text-pretty text-sm leading-8 tracking-[0.02em] text-[color:var(--ink-700)]/80 sm:text-base">
                         {slide.text}
                       </p>
 
-                      <div className="mt-8 mb-3.5 flex flex-col gap-3 sm:flex-row sm:items-center">
+                      <div className="mt-0 flex w-full max-w-xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
                         <Link
                           href="/agendaProfesionales"
                           aria-label="Agendar hora"
-                          className="inline-flex w-full justify-center rounded-full border border-[color:var(--gold-300)] bg-[color:var(--gold-500)] px-7 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--ink-900)] transition duration-300 ease-out hover:bg-[color:var(--gold-300)] sm:w-auto"
+                          className="inline-flex w-full justify-center rounded-full border border-[color:var(--gold-300)] bg-[color:var(--gold-500)] px-7 py-3 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--ink-900)] transition duration-300 ease-out hover:bg-[color:var(--gold-300)] sm:w-auto sm:min-w-[220px]"
                         >
                           Agendar hora
                         </Link>
                         <Link
                           href="/agendaProfesionales"
                           aria-label="Ir a servicios"
-                          className="inline-flex w-full justify-center rounded-full border border-[color:var(--gold-300)] bg-white px-7 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--ink-900)] transition duration-300 ease-out hover:bg-[color:var(--gold-50)] sm:w-auto"
+                          className="inline-flex w-full justify-center rounded-full border border-[color:var(--gold-300)] bg-white px-7 py-3 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--ink-900)] transition duration-300 ease-out hover:bg-[color:var(--gold-50)] sm:w-auto sm:min-w-[220px]"
                         >
                           Conoce nuestros servicios
                         </Link>
@@ -182,15 +189,14 @@ export default function Portada() {
             })}
 
             <div className="absolute inset-x-0 bottom-5 z-20 flex items-center justify-between px-4 sm:px-6">
-              <div className="flex items-center gap-2">
+              <div className="mt-10 flex items-center gap-2">
                 {safeSlides.map((slide, index) => (
                   <button
                     key={slide.id}
                     type="button"
                     aria-label={`Mostrar slide ${index + 1}`}
                     onClick={() => setActiveIndex(index)}
-                    className={[
-                      "h-2.5 rounded-full transition-all duration-300",
+                    className={["h-2.5 rounded-full transition-all duration-300",
                       activeIndex === index
                         ? "w-8 bg-[color:var(--gold-500)]"
                         : "w-2.5 bg-[color:var(--gold-300)]/60 hover:bg-[color:var(--gold-500)]",
